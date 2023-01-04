@@ -17,7 +17,6 @@ $(document).keypress(function(){
 
 $(".btn").click(function(){
 
-    if(started){
     var userChosenColour = $(this).attr("id");
     userClickedPattern.push(userChosenColour);
 
@@ -26,7 +25,6 @@ $(".btn").click(function(){
     animatePress(userChosenColour);
 
     checkAnswer(userClickedPattern.length-1);
-    }
 });
 
 function checkAnswer(currentLevel) {
